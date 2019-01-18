@@ -1,0 +1,33 @@
+// //////////////////// Footer //////////////////// //
+
+.footer {
+  background: $color-dark;
+}
+
+.footer__list {  
+  width:50%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  li {
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px 0;
+    &:hover {
+      color: $color-white;
+    }
+  }
+  a {
+    color: $color-grey;
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+}

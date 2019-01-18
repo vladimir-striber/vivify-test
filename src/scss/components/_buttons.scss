@@ -1,0 +1,97 @@
+// //////////////////// Components styling //////////////////// //
+
+// ///// Mobile menu ///// //
+
+.header__mobileMenu {
+  position: relative;
+  top: 5px;
+  right: 5px;
+  height: 32px;
+  color: $color-blue;
+  cursor: pointer;
+  @media screen and (min-width: $break-sm) {
+    display: none;
+  }
+}
+.mobileDropdown {
+  display: none;
+  width: 100vw;
+  height: 390px;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  z-index: 15;
+  background: $color-dark;
+  opacity: .97;
+  @media screen and (min-width: $break-md) {
+    display: none;
+  }
+}
+.active {
+  display: block;
+  @media screen and (min-width: $break-sm) {
+    display: none;
+  }
+}
+.mobileDropdown__menu {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0;
+  li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: solid 1px #444;
+    
+  }
+  a {
+    text-decoration: none;
+    color: $color-white;
+    font-size: 20px;
+  }
+}
+
+
+// ///// Header buttons ///// //
+
+.header__buttons {
+  // flex-basis: 60%;
+  display: none;
+  justify-content: center;
+  text-align: right;
+  @media screen and(min-width: $break-sm) {
+    display: block;
+    flex-basis: 60%;
+  }
+}
+.header__button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+  cursor: pointer;
+  transition: $transition;
+}
+.button--green {
+  background: $color-green;
+  color: $color-white;
+  border:solid 1px #46b688;
+  width: 250px;
+  &:hover {
+    background: #25855d;
+    border:solid 1px #25855d;
+  }
+}
+.button--white {
+  background: $color-white;
+  border:solid 1px #147abf;
+  color: $color-blue;
+  width: 100px;
+  &:hover {
+    background: #147abf;
+    color: $color-white;
+  }
+  i {
+    margin-left: 5px;
+  }
+}
