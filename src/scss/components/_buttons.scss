@@ -48,6 +48,10 @@
     text-decoration: none;
     color: $color-white;
     font-size: 20px;
+    transition: $transition;
+    &:hover {
+      color: #afafaf;
+    }
   }
 }
 

@@ -7,7 +7,7 @@ let mobDropdown = document.querySelector(".mobileDropdown");
 mobMenu.addEventListener("click", openMenu);
 
 function openMenu(e) {
-  if (mobDropdown.classList.contains("mobileDropdown")) {
+  if (mobDropdown.className === "mobileDropdown") {
     mobDropdown.classList.add("active");
   } else {
     mobDropdown.classList.remove("active");

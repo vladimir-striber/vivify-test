@@ -46,7 +46,11 @@ body {
   .mobileDropdown__menu a {
     text-decoration: none;
     color: #fff;
-    font-size: 20px; }
+    font-size: 20px;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .mobileDropdown__menu a:hover {
+      color: #afafaf; }
 
 .header__buttons {
   display: none;
