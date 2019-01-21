@@ -17,12 +17,17 @@
     text-align: center;
     margin: 0 10px;
     padding: 10px 0;
-    &:hover {
-      color: $color-white;
-    }
   }
   a {
     color: $color-grey;
+    transition: $transition;
+    &:hover {
+      color: #afafaf;
+    }
+    &::selection {
+      color: $color-white;
+      background: $color-blue;
+    }
   }
 }
 
@@ -30,4 +35,5 @@
   text-align: center;
   padding-bottom: 50px;
   margin-bottom: 0;
+  color: #54b2f2;
 }

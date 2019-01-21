@@ -20,7 +20,9 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.25), 0 3px 3px rgba(0, 0, 0, 0.22);
 .header__logo {
   flex-basis: 10%;
   line-height: 40px;
-  cursor: pointer;
+  a {
+    text-decoration: none;
+  }
   span:first-child {
     color: #d03730;
   }

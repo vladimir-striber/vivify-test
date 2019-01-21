@@ -69,8 +69,8 @@
   padding: 10px 15px;
   text-transform: uppercase;
   font-size: $font-size-sm;
-  cursor: pointer;
   transition: $transition;
+  cursor: pointer;
 }
 .button--green {
   background: $color-green;
@@ -81,15 +81,27 @@
     background: #25855d;
     border:solid 1px #25855d;
   }
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
 }
 .button--white {
   background: $color-white;
-  border:solid 1px #147abf;
+  border:solid 1px $color-blue;
   color: $color-blue;
   width: 100px;
   &:hover {
-    background: #147abf;
+    background: $color-blue;
     color: $color-white;
+    a {
+      color: $color-white;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $color-blue;
+    transition: $transition;
   }
   i {
     margin-left: 5px;

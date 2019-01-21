@@ -65,9 +65,9 @@ body {
   padding: 10px 15px;
   text-transform: uppercase;
   font-size: 12px;
-  cursor: pointer;
   -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out; }
+  transition: 0.2s ease-in-out;
+  cursor: pointer; }
 
 .button--green {
   background: #46b688;
@@ -77,6 +77,9 @@ body {
   .button--green:hover {
     background: #25855d;
     border: solid 1px #25855d; }
+  .button--green a {
+    text-decoration: none;
+    color: #fff; }
 
 .button--white {
   background: #fff;
@@ -86,6 +89,13 @@ body {
   .button--white:hover {
     background: #147abf;
     color: #fff; }
+    .button--white:hover a {
+      color: #fff; }
+  .button--white a {
+    text-decoration: none;
+    color: #147abf;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
   .button--white i {
     margin-left: 5px; }
 
@@ -112,8 +122,9 @@ body {
 .header__logo {
   -ms-flex-preferred-size: 10%;
   flex-basis: 10%;
-  line-height: 40px;
-  cursor: pointer; }
+  line-height: 40px; }
+  .header__logo a {
+    text-decoration: none; }
   .header__logo span:first-child {
     color: #d03730; }
   .header__logo span:nth-child(2) {
@@ -171,11 +182,15 @@ body {
 
 .aside__list {
   list-style: none; }
-  .aside__list li {
-    margin-bottom: 30px;
-    color: #555; }
-    .aside__list li:hover {
-      cursor: pointer;
+
+.aside__list-item {
+  margin-bottom: 30px; }
+  .aside__list-item a {
+    text-decoration: none;
+    color: #555;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .aside__list-item a:hover {
       color: #000; }
 
 .main {
@@ -219,6 +234,11 @@ body {
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
   color: #eee; }
+  .main__card-img:hover {
+    cursor: pointer;
+    opacity: 0.8; }
+    .main__card-img:hover p {
+      opacity: 1; }
   .main__card-img p {
     position: absolute;
     top: 50%;
@@ -227,9 +247,14 @@ body {
     transform: translate(-50%, -50%);
     margin: 0;
     width: 115px; }
-  .main__card-img:hover {
-    cursor: pointer;
-    opacity: 0.8; }
+
+.main__card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.25); }
 
 .main__card-info {
   display: -webkit-box;
@@ -238,8 +263,13 @@ body {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   color: #848484; }
-  .main__card-info p {
-    cursor: pointer; }
+  .main__card-info a {
+    text-decoration: none;
+    color: #555;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .main__card-info a:hover {
+      color: #000; }
 
 .footer {
   background: #555; }
@@ -262,12 +292,18 @@ body {
     text-align: center;
     margin: 0 10px;
     padding: 10px 0; }
-    .footer__list li:hover {
-      color: #fff; }
   .footer__list a {
-    color: #eee; }
+    color: #eee;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; }
+    .footer__list a:hover {
+      color: #afafaf; }
+    .footer__list a::selection {
+      color: #fff;
+      background: #147abf; }
 
 .footer__copyright {
   text-align: center;
   padding-bottom: 50px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  color: #54b2f2; }
